@@ -12,7 +12,7 @@ public class MoveController : MonoBehaviour
     int isWalkingRightHash;
     int isWalkingBackwardsHash;
 
-    void Start()
+    protected override void Start()
     {
         animator = GetComponent<Animator>();
         isWalkingHash = Animator.StringToHash("isWalking");
@@ -22,7 +22,7 @@ public class MoveController : MonoBehaviour
         isWalkingBackwardsHash = Animator.StringToHash("isWalkingBackwards");
     }
 
-    void Update()
+    protected override void Update()
     {
 
         #region Movement
@@ -39,56 +39,49 @@ public class MoveController : MonoBehaviour
         bool backwardsPressed = Input.GetKey("s");
 
         // walking forward
-        if (!isWalking && forwardPressed)
-        {
+        if (!isWalking && forwardPressed) {
             animator.SetBool(isWalkingHash, true);
-        }
-        if (isWalking && !forwardPressed)
-        {
+        }//end if
+        if (isWalking && !forwardPressed) {
             animator.SetBool(isWalkingHash, false);
-        }
+        }//end if
+
         // walking left
         if (!isWalking && leftPressed)
         {
             animator.SetBool(isWalkingHash, true);
             animator.SetBool(isWalkingLeftHash, true);
         }
-        if (isWalking && !leftPressed)
-        {
+        if (isWalking && !leftPressed) {
             animator.SetBool(isWalkingHash, false);
             animator.SetBool(isWalkingLeftHash, false);
         }
+
         // walking right
-        if (!isWalking && rightPressed)
-        {
+        if (!isWalking && rightPressed) {
             animator.SetBool(isWalkingHash, true);
             animator.SetBool(isWalkingRightHash, true);
         }
-        if (isWalking && !rightPressed)
-        {
+        if (isWalking && !rightPressed) {
             animator.SetBool(isWalkingHash, false);
             animator.SetBool(isWalkingRightHash, false);
         }
         // walking backwards
-        if (!isWalking && backwardsPressed)
-        {
+        if (!isWalking && backwardsPressed) {
             animator.SetBool(isWalkingHash, true);
             animator.SetBool(isWalkingBackwardsHash, true);
         }
-        if (isWalking && !backwardsPressed)
-        {
+        if (isWalking && !backwardsPressed) {
             animator.SetBool(isWalkingHash, false);
             animator.SetBool(isWalkingBackwardsHash, false);
         }
 
 
         // running
-        if (!isRunning && (forwardPressed && runPressed) )
-        {
+        if (!isRunning && (forwardPressed && runPressed)) {
             animator.SetBool(isRunningHash, true);
         }
-        if (isRunning && (!forwardPressed || !runPressed) )
-        {
+        if (isRunning && (!forwardPressed || !runPressed)) {
             animator.SetBool(isRunningHash, false);
         }
 

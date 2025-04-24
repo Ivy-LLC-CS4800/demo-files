@@ -2,15 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CharacterController))]
-public class FPSController : MonoBehaviour
-{
+public class FPSController : MonoBehaviour {
     public Camera playerCamera;
     public float walkSpeed = 3f;
     public float runSpeed = 6f;
     public float jumpPower = 6f;
     public float gravity = 14f;
-
 
     public float lookSpeed = 2f;
     public float lookXLimit = 45f;
@@ -23,19 +20,16 @@ public class FPSController : MonoBehaviour
 
     Animator animator;
 
-    
     CharacterController characterController;
-    void Start()
-    {
+
+    protected override void Start() {
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         animator = GetComponent<Animator>();
-    }
+    }//end Start()
 
-    void Update()
-    {
-
+    protected override void Update() {
         #region Handles Movment
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
@@ -50,33 +44,28 @@ public class FPSController : MonoBehaviour
         #endregion
 
         #region Handles Jumping
-        if (Input.GetKeyDown(KeyCode.Space) && canMove && characterController.isGrounded)
-        {
+        if (Input.GetKeyDown(KeyCode.Space) && canMove && characterController.isGrounded) {
             moveDirection.y = jumpPower;
-        }
-        else
-        {
+        } else {
             moveDirection.y = movementDirectionY;
-        }
+        }//end if-else
 
-        if (!characterController.isGrounded)
-        {
+        if (!characterController.isGrounded) {
             moveDirection.y -= gravity * Time.deltaTime;
-        }
+        }//end if
 
         #endregion
 
         #region Handles Rotation
         characterController.Move(moveDirection * Time.deltaTime);
 
-        if (canMove)
-        {
+        if (canMove) {
             rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
-        }
+        }//end if
 
         #endregion
-    }
-}
+    }//end Update()
+}//end class

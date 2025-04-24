@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 65fa38be1957ec34db1c47ab62d4ee14
+timeCreated: 1552764384
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142076
+  packageName: 'Conifers [BOTD]'
+  packageVersion: 2.01
+  assetPath: Assets/Forst/Conifers [BOTD]/Sources/Conifer Small/SM Conifer Small
+    LOD1.asset
+  uploadId: 649803

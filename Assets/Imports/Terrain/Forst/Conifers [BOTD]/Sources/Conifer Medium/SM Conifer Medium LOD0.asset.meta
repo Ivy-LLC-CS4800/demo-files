@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 6b18f7bd1638a9c48a17235a345af3fe
+timeCreated: 1552684837
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 142076
+  packageName: 'Conifers [BOTD]'
+  packageVersion: 2.01
+  assetPath: Assets/Forst/Conifers [BOTD]/Sources/Conifer Medium/SM Conifer Medium
+    LOD0.asset
+  uploadId: 649803
