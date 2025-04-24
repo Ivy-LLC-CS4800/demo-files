@@ -15,11 +15,6 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("LoginScreen");
     }
 
-    public void LoadRegisterScene()
-    {
-        SceneManager.LoadScene("RegisterScreen");
-    }
-
     public void LoadStatScene()
     {
         //SceneManager.LoadScene("StatScreen");
@@ -30,12 +25,12 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("EnvTest");
     }
 
-    public void LoadEnv1Scene()
+    public void LoadReportScene()
     {
-        SceneManager.LoadScene("EnvTest2");
+        SceneManager.LoadScene("RScreenAlt");
     }
 
-    public void LoadReportScene()
+    public void LoadDBScene()
     {
         SceneManager.LoadScene("ReportScreen");
     }
