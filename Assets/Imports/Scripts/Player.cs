@@ -83,16 +83,17 @@ public class Player : MonoBehaviour
     //IF PickUpUI NOT FILLED RAYCAST DOES NOT UPDATE
     private void Update(){
         //Line below shows the raycast line but can be removed without issue
-        //Keeps the raycast in front of the camera
+        // Used to show a raycast for debug in sceme view
         if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out useableHit, hitRange, useableLayerMask)){
             Debug.DrawRay(playerCameraTransform.position, playerCameraTransform.forward * hitRange, Color.blue);
             if(inHandItem != null){
                 useableUI.SetActive(true);
                 return;
-            }//end if
+            }
         } else{
             useableUI.SetActive(false);
         }//end if-else
+
         if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out pickableHit, hitRange, pickableLayerMask)){
             Debug.DrawRay(playerCameraTransform.position, playerCameraTransform.forward * hitRange, Color.red);
             pickUpUI.SetActive(true);
@@ -103,42 +104,43 @@ public class Player : MonoBehaviour
                     var lastScript = lastHit.GetComponent<Outline>();
                     if(lastScript != null){
                         lastScript.enabled = false;
-                    }//end if
-                }//end if
+                    }
+                }
                 script.enabled = true;
                 lastHit = pickableHit.collider;
-            }//end if
-        } else {
+            } 
+        } else{
             pickUpUI.SetActive(false);
-            if(lastHit != null) {
+            if(lastHit != null){
                 var lastScript = lastHit.GetComponent<Outline>();
                 if(lastScript != null){
                     lastScript.enabled = false;
-                }//end if
+                }
                 lastHit = null;
-            }//end if
+            }
         }//end if-else
 
         Debug.DrawRay(playerCameraTransform.position, playerCameraTransform.forward * hitRange, Color.red);
+
         //Shows the pickUpUI if the raycast detect something
-        if (hit.collider != null){
+       /* if (hit.collider != null){
             hit.collider.GetComponent<Highlight>()?.ToggleHighlight(false);
             pickUpUI.SetActive(false);
-        }//end if
+        }
+
         if (inHandItem != null){
             return;
-        }//end if
+        }
 
-        //Keeps the raycast in front of the camera
-        // if (Physics.Raycast(
-        //     playerCameraTransform.position, 
-        //     playerCameraTransform.forward, 
-        //     out hit, 
-        //     hitRange, 
-        //     pickableLayerMask))
-        // {
-        //     hit.collider.GetComponent<Highlight>()?.ToggleHighlight(true);
-        //     pickUpUI.SetActive(true);
-        // }
-    }//end Update()
-}//end class
+        // Highlight the raycasted object
+        if (Physics.Raycast(
+            playerCameraTransform.position, 
+            playerCameraTransform.forward, 
+            out hit, 
+            hitRange, 
+            pickableLayerMask)) {
+            hit.collider.GetComponent<Highlight>()?.ToggleHighlight(true);
+            pickUpUI.SetActive(true);
+        }*/
+    }
+}

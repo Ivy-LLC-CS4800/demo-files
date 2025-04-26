@@ -51,12 +51,11 @@ public class Login : MonoBehaviour
     // Register button click event
     public void OnRegisterButtonClick()
     {
-        sceneCall.LoadRegisterScene();
+       // sceneCall.LoadRegisterScene();
     }
 
     private void ChangeToMainScene()
     {
-        sceneCall.LoadMainScene();
+       // sceneCall.LoadMainScene();
     }
-
 }
