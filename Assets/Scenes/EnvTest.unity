@@ -288,7 +288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &29691593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2129,7 +2129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &205254901
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3243,12 +3243,12 @@ GameObject:
   - component: {fileID: 313065921}
   - component: {fileID: 313065920}
   m_Layer: 5
-  m_Name: MetalDebrisCard (1)
+  m_Name: MetalDebrisCardTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &313065919
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3783,7 +3783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &348288642
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4316,7 +4316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &386904399
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5578,7 +5578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &466582484
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6411,12 +6411,12 @@ GameObject:
   - component: {fileID: 550607601}
   - component: {fileID: 550607600}
   m_Layer: 5
-  m_Name: SmallOtherDebrisCard (1)
+  m_Name: SmallOtherDebrisCardTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &550607599
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7303,7 +7303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &631597946
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7589,7 +7589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &644797873
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7860,12 +7860,12 @@ GameObject:
   - component: {fileID: 666548736}
   - component: {fileID: 666548735}
   m_Layer: 5
-  m_Name: ConcreteDebrisCard (1)
+  m_Name: ConcreteDebrisCardTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &666548734
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10846,7 +10846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &950782070
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11052,7 +11052,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &972288852
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11731,12 +11731,12 @@ GameObject:
   - component: {fileID: 1056210578}
   - component: {fileID: 1056210577}
   m_Layer: 5
-  m_Name: WoodDebrisCard (1)
+  m_Name: WoodDebrisCardTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1056210576
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11863,7 +11863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1067748669
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11990,7 +11990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1080015309
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12606,7 +12606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1159793496
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16650,7 +16650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1522101068
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17190,7 +17190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1547706685
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20609,7 +20609,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1846705323
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21817,7 +21817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1982270980
 RectTransform:
   m_ObjectHideFlags: 0
