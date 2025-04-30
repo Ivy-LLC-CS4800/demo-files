@@ -9,6 +9,7 @@ TagManager:
   - PasswordInput
   - RoleInput
   - TotalScoreInput
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour {
     // Variables
     [SerializeField] public Transform[] spawnPoints; // list of spawn point locations
-    [SerializeField] protected DebrisFactory debrisFactory; // the factory that creates debris objects
+    public DebrisFactory debrisFactory; // the factory that creates debris objects
     [SerializeField] private int numberOfDebrisToSpawn = 8; // # of debris to spawn in the scene
     [SerializeField] private int numberOfDebrisTypeDupes = 2; // # of debris type duplicates
     [SerializeField] private int numberOfSpawnPoints = 12; // # of spawn points set in the scene // Do not decrease this number, only increase this number if you make more spawn points
